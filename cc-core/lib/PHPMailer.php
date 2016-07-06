@@ -583,7 +583,7 @@ class PHPMailer {
       if ($this->exceptions) {
         throw $e;
       }
-      echo $e->getMessage()."\n";
+      //echo $e->getMessage()."\n";	//Causes errors e.g. in comments, when not using e-mail	//TODO: Use system log instead
       return false;
     }
   }
